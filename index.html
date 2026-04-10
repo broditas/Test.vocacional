@@ -129,8 +129,8 @@
             { q: "¿Qué te describiría mejor?", opts: ["Analítico y lógico", "Curioso y observador", "Creativo y visual", "Sociable y comunicativo", "Metódico y organizado", "Práctico y manual"], vals: ["AD", "BIO", "AV", "CD", "PT", "OI"] },
             { q: "¿Qué te gustaría aprender?", opts: ["Crear apps", "Biología", "Producción audiovisual", "Marketing digital", "Bases de datos y SQL", "Herramientas de oficina"], vals: ["DS", "BIO", "AV", "CD", "AD", "OI"] },
             { q: "¿Qué te motiva más?", opts: ["Detectar vulnerabilidades", "Descubrir cosas nuevas", "Expresarte visualmente", "Comunicar mensajes", "Lograr objetivos de equipo", "Brindar soporte técnico"], vals: ["CS", "BIO", "AV", "CD", "PT", "OI"] },
-            { q: "¿Qué ambiente preferís?", opts: ["Frente a una consola de comandos", "Laboratorio", "Set creativo", "Entorno dinámico/Social", "Planta industrial", "Oficina administrativa"], vals: ["CS", "BIO", "AV", "CD", "PT", "OI"] },
-            { q: "¿Qué te resulta más fácil?", opts: ["Pensar soluciones lógicas", "Analizar tendencias y estadísticas", "Crear contenido", "Hablar/Expresarte", "Planificar procesos", "Optimizar software o hardware"], vals: ["DS", "AD", "AV", "CD", "PT", "OI"] },
+            { q: "¿Qué ambiente preferís?", opts: ["Oficina tecnológica", "Laboratorio", "Set creativo", "Entorno dinámico/Social", "Planta industrial", "Oficina administrativa"], vals: ["CS", "BIO", "AV", "CD", "PT", "OI"] },
+            { q: "¿Qué te resulta más fácil?", opts: ["Pensar soluciones lógicas", "Analizar tendencias y estadísticas", "Crear contenido", "Hablar/Expresarte", "Planificar procesos", "Optimizacion de procesos"], vals: ["DS", "AD", "AV", "CD", "PT", "OI"] },
             { q: "¿Qué te gustaría lograr?", opts: ["Desarrollar tecnología", "Aportar a la ciencia", "Hacer sistemas más seguros", "Comunicar efectivamente", "Optimizar la producción", "Soporte informático"], vals: ["DS", "BIO", "CS", "CD", "PT", "OI"] }
         ];
 
@@ -191,7 +191,7 @@
             
             switch(maxArea) {
                 case 'logica': 
-                    rasgoPrincipal = "una perfil estructurado con gran capacidad para la resolución de problemas mediante algoritmos y seguridad"; 
+                    rasgoPrincipal = "una perfil estructurado con gran capacidad para la resolución de problemas"; 
                     break;
                 case 'analitica': 
                     rasgoPrincipal = "una fuerte inclinación hacia el método científico, el análisis de datos y la búsqueda de patrones"; 
@@ -208,12 +208,12 @@
             const nexoCarrera = {
                 DS: "Esta base lógica es fundamental para el Desarrollo de Software, donde la creación de sistemas complejos requiere tu nivel de precisión.",
                 BIO: "Esta capacidad analítica es el motor ideal para la Biotecnología, permitiéndote abordar desafíos científicos con una visión tecnológica.",
-                AV: "Tu visión creativa encuentra su lugar natural en la Realización Audiovisual, transformando conceptos en experiencias visuales de alto impacto.",
-                CD: "Tu perfil comunicativo y digital es clave para la Comunicación Digital, liderando la creación de narrativas en entornos dinámicos.",
-                PT: "Tu enfoque en la optimización es esencial en Producción y Tecnología para mejorar la eficiencia en procesos industriales modernos.",
-                CS: "Esa mentalidad estructurada y vigilante es el pilar de la Ciberseguridad, protegiendo activos digitales críticos contra amenazas.",
-                AD: "Tu destreza con los patrones te convierte en un experto natural para el Análisis de Datos, extrayendo valor real de grandes volúmenes de información.",
-                OI: "Esa capacidad operativa garantiza la estabilidad en la Operación Informática, gestionando sistemas con un enfoque metódico y seguro.",
+                AV: "Tu visión creativa encuentra su lugar natural en la Realización Audiovisual, transformando conceptos en experiencias visuales.",
+                CD: "Tu perfil comunicativo y digital es clave para la Comunicación Digital.",
+                PT: "Tu enfoque en la optimización es esencial en Producción y Tecnología para mejorar la eficiencia en procesos.",
+                CS: "Esa mentalidad estructurada y vigilante es el pilar de la Ciberseguridad.",
+                AD: "Tu destreza con los patrones te convierte en un experto natural para el Análisis de Datos, extrayendo valor real volúmenes de información.",
+                OI: "Esa capacidad operativa garantiza la estabilidad en la Operación Informática.",
                 RC: "Tu habilidad práctica es indispensable en la Reparación de Dispositivos, diagnosticando y resolviendo fallas técnicas en hardware esencial.",
                 PW: "Esa combinación de lógica y creatividad visual es perfecta para el Desarrollo Web, construyendo interfaces modernas y funcionales."
             };
@@ -320,6 +320,7 @@
 
             doc.save("Reporte_Vocacional_Tech_Pilar.pdf");
         }
+
     </script>
 </body>
 </html>
